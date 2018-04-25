@@ -1,0 +1,16 @@
+#!/bin/python3
+import sys
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    ans=-1
+    while n%2 == 0:
+        ans=2
+        n>>=1
+    for i in range(3,int(n**(1/2))+1, 2):
+        while n%i == 0:
+            ans = i
+            n=n/i
+    if n>2:
+        ans = n
+    print(int(ans))
