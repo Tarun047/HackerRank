@@ -1,0 +1,21 @@
+#!/bin/python3
+
+import sys
+
+
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    s=0
+    a=0
+    b=1
+    while True:
+        c=a+b
+        if(c<n):
+            if(c%2==0):
+                s+=c
+            a=b
+            b=c
+        else:
+            break
+    print(s)
