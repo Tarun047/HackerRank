@@ -1,2 +1,2 @@
 # HackerRank
-This Repository Contains my Work at HR
+This Repository Contains my Work at Hacker Rank
